@@ -6,7 +6,8 @@ This project is about analyzing the sentiments of Amazon Reviews and categorizin
 
 Objective: build an ML learning model that predicts sentiment type of Reviews in the dataset and suggest their price increase/ decrease/same. Whenever there is Postive Review, the product can have Price increase Flag as True. Whenever there is Negative Review, the product can have Price increase Flag as False. The consolidation of Postive and Negative review count will determine the Product Price change. 
 
-### 1. Problem Statement: There are numerous products on Amazon from various sellers. The customers may or may not be satisfied with the product due to many factors any may be expressed by their reviews. This sentiment analysis may help Amazon Pricing team and also Quality improvement Team to improve their Quality based on the sentiments of the Users and helps to update their Pricing/ Quality accordingly.
+### 1. Problem Statement: 
+There are numerous products on Amazon from various sellers. The customers may or may not be satisfied with the product due to many factors any may be expressed by their reviews. This sentiment analysis may help Amazon Pricing team and also Quality improvement Team to improve their Quality based on the sentiments of the Users and helps to update their Pricing/ Quality accordingly.
 
 Amazon has Reviews for it’s various Products. Analysis of review tells the POSITIVE / NEGATIVE / NEUTRAL rating of a Product. This highest cumulative is used by QA team to send feedback to the Sellers to either improve their Product Quality / Appropriate their Price
 
@@ -41,7 +42,8 @@ The dataset will be passed onto various ML models such as Logistic Regression, K
 Since it’s a Classification Problem, I would be using the below metrics to find its efficiency.
 
 
-### Success Metrics:  Accuracy, Precision, Recall, F1 score, ROC-AUC 
+### Success Metrics:  
+Accuracy, Precision, Recall, F1 score, ROC-AUC 
 
 ### Possible Insights: 
 Analyze the product reviews and predict the sentiments of the Reviewers.
