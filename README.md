@@ -25,7 +25,12 @@ For this particular project the steps I followed was
 2. Out of 3000000, there are 188 missing values , Since the missing values are in title, it may not make difference in finding the analysis, so this can be ignored.
 3. Verified if all DataTyes are in proper format and replaced them accordingly.
 4. Deleted if there were duplication in Data for the same Title and Review if the contents were the same and removed them.
-
+5. Check if there is any imbalance in the dataset for differernt target category. In this dataset there were no data imbalance.
+6. Updating Rating 1 as Negative, 3 as Neutral, 5 as Postive. Scope of this project is not for RAting 2 and 4.
+7. The Strings are made sure to have only Alphabets and no other special characters.
+8. The Review_Title and Review are tokenized into individual words as a list in a separate column as title_word_tokenize_count and Cleaned_Review. <i> (we will utilize only Review for Sentiment analysis and use them for predicting the categories) </i>
+9. Stemmer and a Word Lemmatizer are text preprocessing tools that reduce words to their base form.
+10. TF‑IDF vectorizer is used to convert text into numerical feature vectors for Model Building.
 
 3. EDA
 The data visualization and Feature Engineering takes place and prepares the dataset for Modelling.
