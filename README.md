@@ -44,11 +44,11 @@ For this EDA the steps I followed:
 5. PCA is used to fetch if we could obtain variance in data by few features but found to be that for achieving 90% of the variance: 93 components is needed, for achieving 95% of the variance: 251 components is needed, for achieving  ~100% of the variance: 504 components is needed. Each feature taken for consideration are the words in the Amazon review.
 6. The feature set is saved in a csv format for modelling step.
 
-   | Variance Threshold | no. of Components | What It Means |
-| :------------ | :--------------------------------------: | --------: |
-| `90%`  | *93*         |     You can compress your 504‑dimensional space down to 93 orthogonal features while retaining most of the signal.   |
-| `95%`    | **251**     |     To capture a bit more subtle variance, you need almost triple the components compared to 90%.   |
-| `100%`    | **504**     |     This is the full feature set after preprocessing — no dimensionality reduction.   |
+| Variance Threshold | no. of Components | What It Means |
+| :----------------- | :----------------: | ------------: |
+| 90%                | 93                 | You can compress your 504‑dimensional space down to 93 orthogonal features while retaining most of the signal. |
+| 95%                | 251                | To capture a bit more subtle variance, you need almost triple the components compared to 90%. |
+| 100%               | 504                | This is the full feature set after preprocessing — no dimensionality reduction. |
 
 
 ### 4. Modeling
