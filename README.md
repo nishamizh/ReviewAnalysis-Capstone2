@@ -50,6 +50,7 @@ For this EDA the steps I followed:
 | 95%                | 251                | To capture a bit more subtle variance, you need almost triple the components compared to 90%. |
 | 100%               | 504                | This is the full feature set after preprocessing — no dimensionality reduction. |
 
+The “elbow” effect: The jump from 93 → 251 components for just 5% more variance suggests diminishing returns. That extra 5% is spread across many low‑variance components, which may be mostly noise.
 
 ### 4. Modeling
 The dataset will be passed onto various ML models such as Logistic Regression, KNN, Decision tree, Random Forest, SVM.
