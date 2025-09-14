@@ -31,9 +31,7 @@ For this Data wrangling the steps I followed:
 7. The Strings are made sure to have only Alphabets and no other special characters.
 8. The Review_Title and Review are tokenized into individual words as a list in a separate column as title_word_tokenize_count and Cleaned_Review. <i> (we will utilize only Review for Sentiment analysis and use them for predicting the categories) </i>
 9. Stemmer and a Word Lemmatizer are text preprocessing tools that reduce words to their base form.
-10. TF‑IDF vectorizer is used to convert text into numerical feature vectors for Model Building.
-11. At the end of the Data Wrangling the number features in the dataset is 116, where we initially started with only 3 features. Each Word text is tokenized and TF‑IDF vectorized to get 116 features.
-12. The feature set is saved in a csv format for EDA.
+10. The feature set is saved in a csv format for EDA.
 
 ### 3. EDA
 The data visualization and Feature Engineering takes place and prepares the dataset for Modelling.
@@ -43,9 +41,15 @@ For this EDA the steps I followed:
 3. The most frequent TOP 70 words for each of the Rating 1, 3, 5 are visualzed to know the frequency usage of various words.
 3. Distribution of Review Lengths are found based on the number of words and visualized to see how it looks.
 4. Lexical Diversity for each Rating and Sentiment is visualized to find their correlation.
-5. PCA is used to fetch if we could obtain variance in data by few features but found to be that for achieving 95% variance in the data, we have to use 91 components and for getting 90% variance in data - we have to use 83 components out of 100 Features. Each feature taken for consideration are the words in the Amazon review.
-6. In EDA the top 100 most frequent words are used as features and and all the above analysis were performed.
-7. The feature set is saved in a csv format for modelling step.
+5. PCA is used to fetch if we could obtain variance in data by few features but found to be that for achieving 90% of the variance: 93 components is needed, for achieving 95% of the variance: 251 components is needed, for achieving  ~100% of the variance: 504 components is needed. Each feature taken for consideration are the words in the Amazon review.
+6. The feature set is saved in a csv format for modelling step.
+
+   | Variance Threshold | no. of Components | What It Means |
+| :------------ | :--------------------------------------: | --------: |
+| `90%`  | *93*         |     You can compress your 504‑dimensional space down to 93 orthogonal features while retaining most of the signal.   |
+| `95%`    | **251**     |     To capture a bit more subtle variance, you need almost triple the components compared to 90%.   |
+| `100%`    | **504**     |     This is the full feature set after preprocessing — no dimensionality reduction.   |
+
 
 ### 4. Modeling
 The dataset will be passed onto various ML models such as Logistic Regression, KNN, Decision tree, Random Forest, SVM.
