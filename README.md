@@ -53,15 +53,53 @@ For this EDA the steps I followed:
 The “elbow” effect: The jump from 93 → 251 components for just 5% more variance suggests diminishing returns. That extra 5% is spread across many low‑variance components, which may be mostly noise.
 
 ### 4. Modeling
-The dataset will be passed onto various ML models such as Logistic Regression, KNN, Decision tree, Random Forest, SVM.
-Since it’s a Classification Problem, I would be using the below metrics to find its efficiency.
+This project evaluates multiple classification algorithms to determine the best-performing model for predicting Rating_Sentiment.
 
-1. The Data is pre-processed first before it's used for Modelling.
-2. In Data Pre-processing, the data is defined as Feature <i>(except the target and few of the redudant features all others are used as Features)</i> and Target - Rating_Sentiment`.
-3. The data is then split into Training and Testing Data set where 80% of the data were used for Traiing the rest for Testing the Model performance using Supervided Learning method, to find the model Performance.
-4. Traditional Machine Learning model such as Logistic Regression, KNN, Naive Bayes, Random Forest, XGBoost, Gradient Boosting were performed in Modelling.
-5. Initaially all the models were performed with basic parameters and their efficieny are evaluated.
-6. Then with KFold Validatation with shuffle and using hyper paramameter optimaztion techniques using GridSearchCV and HyperOpt are used to improve to model performance.
+4.1 Data Pre‑Processing
+Before modeling, the dataset undergoes a structured pre‑processing pipeline:
+
+Feature & Target Definition
+
+Target: Rating_Sentiment
+
+Features: All remaining variables except the target and a few redundant features.
+
+Data Cleaning & Preparation
+
+Removal of redundant features
+Handling of missing values (if applicable)
+Encoding of categorical variables
+Feature scaling/normalization (where required by the model)
+
+Data Splitting
+
+Training Set: 80% of the data
+Testing Set: 20% of the data
+
+Split performed to evaluate model performance using supervised learning.
+
+4.2 Baseline Modeling
+The following algorithms are trained with default parameters to establish baseline performance:
+
+Logistic Regression
+K‑Nearest Neighbors (KNN)
+Decision Tree
+Random Forest
+Support Vector Machine (SVM)
+Naive Bayes
+XGBoost
+Gradient Boosting
+
+Performance is measured using standard classification metrics: Accuracy, Precision, Recall, F1‑Score, and ROC‑AUC.
+
+4.3 Model Optimization
+
+To improve performance:
+K‑Fold Cross‑Validation (with shuffling) for robust evaluation
+Hyperparameter Tuning using:
+GridSearchCV
+
+HyperOpt
 
 #### Logistic Regression Analysis:
 Overall Accuracy: ~74.7% — decent for a 3‑class sentiment task, but not the whole story.
