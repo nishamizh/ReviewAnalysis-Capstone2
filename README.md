@@ -55,16 +55,16 @@ The “elbow” effect: The jump from 93 → 251 components for just 5% more var
 ### 4. Modeling
 This project evaluates multiple classification algorithms to determine the best-performing model for predicting Rating_Sentiment.
 
-4.1 Data Pre‑Processing
+##### 4.1 Data Pre‑Processing
 Before modeling, the dataset undergoes a structured pre‑processing pipeline:
 
 Feature & Target Definition
 
-Target: Rating_Sentiment
+###### Target: Rating_Sentiment
 
-Features: All remaining variables except the target and a few redundant features.
+###### Features: All remaining variables except the target and a few redundant features.
 
-Data Cleaning & Preparation
+##### Data Cleaning & Preparation
 
 Removal of redundant features
 Handling of missing values (if applicable)
@@ -78,7 +78,7 @@ Testing Set: 20% of the data
 
 Split performed to evaluate model performance using supervised learning.
 
-4.2 Baseline Modeling
+##### 4.2 Baseline Modeling
 The following algorithms are trained with default parameters to establish baseline performance:
 
 Logistic Regression
@@ -92,7 +92,7 @@ Gradient Boosting
 
 Performance is measured using standard classification metrics: Accuracy, Precision, Recall, F1‑Score, and ROC‑AUC.
 
-4.3 Model Optimization
+##### 4.3 Model Optimization
 
 To improve performance:
 K‑Fold Cross‑Validation (with shuffling) for robust evaluation
