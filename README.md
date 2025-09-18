@@ -12,7 +12,7 @@ There are numerous products on Amazon from various sellers. The customers may or
 Amazon has Reviews for it’s various Products. Analysis of review tells the POSITIVE / NEGATIVE / NEUTRAL rating of a Product. This highest cumulative is used by QA team to send feedback to the Sellers to either improve their Product Quality / Appropriate their Price
 
 
-About the Data:
+About the Data:<br/>
 The Data is got from Kaggle, https://www.kaggle.com/datasets/yacharki/amazon-reviews-for-sa-binary-negative-positive-csv
 This particular data has 3000000 rows(review details). This data(each row) has Ratings, Review Title, Reviews.
 
